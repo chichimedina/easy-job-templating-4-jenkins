@@ -98,20 +98,21 @@ In essense, following the _Object-oriented Paradigm_:
 The _EasyJobTemplating_ project has the following directory structure:
 
 ```
-
-jobs/                                       --> Where Definition Jobs per group / team / business unit are located.
-    +-- finance/                            --> Example for a `Finance` team.
-    +-- marketing/                          --> Example for a `Marketing` team.
-    +-- hr/                                 --> Another example for the `Human Resources` department.
-
-projects/                                   --> EasyJobTemplating projects.
-    +-- corporate-stats-monthly-report/     --> Example project.
-        +-- scripts/                        --> This is where the Jenkins DSL and Jenkins Pipeline scripts are in.
-        +-- vars/                           --> Here you'll find the `global` vars file for an EasyJobTemplating projects.
-        +-- libs/                           --> Shared code that works as libraries for the projects and their scripts.
-           +-- resources/                   --> Libraries for Jenkins resources.
-           +-- src/                         --> Code libraries accessible by the project's scripts. 
-
+(root)
++-- jobs/                                   # Where Definition Jobs per group / team / business unit are located.
+|   +-- finance/                            # Example for a `Finance` team.
+|   +-- marketing/                          # Example for a `Marketing` team.
+|   +-- hr/                                 # Another example for the `Human Resources` department.
+|
++-- projects/                               # EasyJobTemplating projects.
+|   +-- corporate-stats-monthly-report/     # Example project.
+|       +-- scripts/                        # This is where the Jenkins DSL and Jenkins Pipeline scripts are in.
+|       +-- vars/                           # Here you'll find the `global` vars file for an EasyJobTemplating projects.
+|       +-- libs/                           # Shared code that works as libraries for the projects and their scripts.
+|           +-- resources/                  # Libraries for Jenkins resources.
+|           +-- src/                        # Code libraries accessible by the project's scripts. 
+|
++-- job_builder.groovy                      # Groovy orchestrator that builds jobs based on `Definition Jobs`
 ```
 
 <br />
